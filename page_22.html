@@ -13,17 +13,6 @@
 <link rel="stylesheet" href="trivantis.css" type="text/css" />
 <link rel="stylesheet" href="dialog.css" type="text/css" />
 <style type="text/css">
-  @media print {body { display:none; }}
-  html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ins, del, form, input, textarea, select, button, option, optgroup, hr, br {
-    -webkit-touch-callout: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  :not(input):not(textarea){
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-  }
 </style>
 
 <!--[if lte IE 9]>
@@ -41,7 +30,6 @@ document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', "#default#VML")
 <script src="trivantis-image.js"></script>
 <script src="trivantis-inline.js"></script>
 <script src="trivantis-text.js"></script>
-<script src="trivantis-trans.js"></script>
 <script src="trivantis-pagetracking.js"></script>
 <script src="device_desktop/page_22.js"></script>
 <script src="device_tablet/page_22.js"></script>
@@ -60,17 +48,35 @@ function initGEV(){
 
 var trivPageScope = {};
 var pgID = 'page11866';
-trivProtected = true;
 trivWeb20Popups = true;
-var trivPlayer = null;
 var bPageLoaded = false;
 var pageScale = 1;
-var bDisableBrowserResize = true;
+var bDisableBrowserResize = false;
 var bScaleToWindow = false;
 var bFitToWidth = false;
 var bFitToMobile = false;
 var pageHeight = 662;
 var bLoadedVariables = false;
+;
+var bTrivOffline = true;
+function doInitialCallbacks(){
+  alert=(function(str){setTimeout('alert("'+str+'")',100);});
+  if( window.myTop ) window.myTop.close=(function(){setTimeout('window.myTop.close()',100);});
+  AwesomiumOpenFile=(function(str){setTimeout('AwesomiumOpenFile("'+str+'")',100);});
+  userPrompt=(function(str){return "";});
+  window.history.back=(function(){setTimeout('window.history.back()',100);});
+  try{
+    app.bindCompleted();
+    window.myTop.close = function(){return app.closeWindow()};
+    window.history.back = function(){return app.goBack()};
+    alert = function(str){return app.alert(str)};
+    userPrompt = function(str){return app.userPrompt(str)};
+    AwesomiumOpenFile=function(str){return app.openFile(str)};
+    app.bReady = true;
+    console.log('app bound\n');
+    setDisplayType("Desktop",1009);
+  }catch(e){console.log('app not bound\n');setTimeout('doInitialCallbacks()', 100);}
+}
 
 var arObjs = [];
 
@@ -118,8 +124,7 @@ function findWH(){	//echo LD-769
 
 trivSetupPage();
 
- if( isSppCapable() && window.trivPlayer === null )window.location.replace("index.html?jmptopg=page_22.html");
- function ReFlow() {
+function ReFlow() {
   findWH()
   var pageEleWidth = pageLayer.ele.clientWidth;
   if (  (is.ieAny || is.edge )  && pageLayer.ele.clientWidth == 0 && isSinglePagePlayerAvail()) pageEleWidth = parseFloat(GetPageWidth()) ;
@@ -162,7 +167,6 @@ trivSetupPage();
   Offset_qu11869()
 }
 
-var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'grafisk_design_intro', true )
 VarQuestion_0005 = new Variable( 'VarQuestion_0005', '', 0, 0, null, null, 'grafisk_design_intro', false )
@@ -259,6 +263,8 @@ function init() {
     window.scrollTo(0,1);
     var titleManagerIndexWindow = (window && window.parent && window.parent.bIsTitleManagerIndexFile) ? window.parent : null;
     if(titleManagerIndexWindow)titleManagerIndexWindow.scrollTo(0,1);
+    Update_qu11869( 0 )
+
     if(!isSinglePagePlayerAvail()) postPageShowAction();
     if( location.hash )
     {
@@ -270,24 +276,13 @@ function init() {
       location.hash = newHash
       if((typeof(bTrivRunView) != 'undefined'  && bTrivRunView) || (typeof(bTrivOffline) != 'undefined' && bTrivOffline)) window.scrollTo(0 , getTopofObj(document.getElementById(newHash)));
     }
+    getDisplayDocument().onkeydown=keyDown
+    getDisplayDocument().onkeyup=keyUp
     setTimeout( 'trivUpdateTOC( 1 )', 100 )
     bPageLoaded = true;
     ReFlow();
-    if(!isSinglePagePlayerAvail())
-       loadActions();
   }
   try {initGEV();} catch(e){}
-}
-  window.bLoadedVariables = true;
-function loadActions(){
-    if((window.bPageLoaded && window.bLoadedVariables && getDisplayWindow().pagePlayer &&
-	getDisplayWindow().pagePlayer.arLoadedPages && getDisplayWindow().pagePlayer.arLoadedPages.length == 1) || (window.bPageLoaded && window.bLoadedVariables && !isSinglePagePlayerAvail() )){
-      Update_qu11869( 0 )
-
-       postPageShowAction();
-    }
-    else
-      setTimeout(loadActions, 100);
 }
 function postPageShowAction(){
   if ( trivPageTracking.GetRangeStatus(11866) == 'notstarted' ) trivPageTracking.SetRangeStatus(11866,2);
@@ -349,45 +344,6 @@ function trivLeavePage() {
     }
 }
 
-function disableRC(e) {
-    var key;
-    if(is.ie) key = event.button;
-    else key = e.which;
-    if (key == 2 || key == 3) {
-        return false;
-    }
-}
-if(getDisplayDocument().layers) getDisplayDocument().captureEvents(Event.MOUSEDOWN);
-getDisplayDocument().onmousedown=disableRC;
-getDisplayDocument().oncontextmenu=new Function("return false");
-
-function disableCtrlK(e){
-    var arrKeys = new Array("a", "c", "u", "p");
-    var iCharCode;
-    var bCombo = false;
-    var bAllowPrint = false;
-    if(is.ie) { iCharCode = event.keyCode; e = event;}
-    else iCharCode = e.charCode;
-    if( e.keyCode == 45 ) bCombo = true;
-    var sChar = String.fromCharCode(iCharCode).toLowerCase();
-    if(e.ctrlKey) {
-        for( i = 0; i < arrKeys.length ;i++) {
-            if(bAllowPrint && arrKeys[i] == "p") continue;
-            if(arrKeys[i].toLowerCase() == sChar || bCombo) {
-                if(is.ie) e.returnValue = false;
-                else return false;
-            }
-        }
-    }
-}
-if(document.layers) document.captureEvents(Event.KEYPRESS | Event.KEYDOWN);
-if(is.ie) document.onkeydown=disableCtrlK
-else document.onkeypress=disableCtrlK
-
-document.onselectstart=new Function ("return false");
-
-trivProtected = true;
-
 function trivPrevPage() {
     trivExitPage( 'page_21.html', true )
 }
@@ -428,12 +384,12 @@ function doImmFeedback( objId ) {
     if(!qu11869.hasBeenProcessed && qu11869Cked >= 3) {
     if( ans_VarQuestion_0005 == '\u0044\u0065\u0074\u0020\u0062\u0069\u0064\u0072\u0061\u0072\u0020\u0074\u0069\u006C\u0020\u0065\u006E\u0020\u0070\u006F\u0073\u0069\u0074\u0069\u0076\u0020\u0069\u006E\u0074\u0065\u0072\u006E\u0020\u0062\u0065\u0076\u0069\u0073\u0073\u0074\u0067\u006A\u00F8\u0072\u0069\u006E\u0067\u0020\u006F\u006D\u0020\u0069\u0064\u0065\u006E\u0074\u0069\u0074\u0065\u0074\u002C\u0044\u0065\u0074\u0020\u0073\u0074\u0079\u0072\u006B\u0065\u0072\u0020\u0062\u0065\u0064\u0072\u0069\u0066\u0074\u0065\u006E\u0073\u0020\u006F\u006D\u0064\u00F8\u006D\u006D\u0065\u002C\u0044\u0065\u0074\u0020\u0073\u0069\u006B\u0072\u0065\u0072\u0020\u0065\u006E\u0020\u006B\u006F\u006E\u0073\u0065\u006B\u0076\u0065\u006E\u0074\u0020\u006B\u006F\u006D\u006D\u0075\u006E\u0069\u006B\u0061\u0073\u006A\u006F\u006E' ) 
     { //1 
-        trivActFBCnt++; action11869_1(onAfterFBAction);  return 0;
+        trivActFBCnt++; action11869_3(onAfterFBAction);  return 0;
   } //1
 
     else if( ans_VarQuestion_0005 != '\u0044\u0065\u0074\u0020\u0062\u0069\u0064\u0072\u0061\u0072\u0020\u0074\u0069\u006C\u0020\u0065\u006E\u0020\u0070\u006F\u0073\u0069\u0074\u0069\u0076\u0020\u0069\u006E\u0074\u0065\u0072\u006E\u0020\u0062\u0065\u0076\u0069\u0073\u0073\u0074\u0067\u006A\u00F8\u0072\u0069\u006E\u0067\u0020\u006F\u006D\u0020\u0069\u0064\u0065\u006E\u0074\u0069\u0074\u0065\u0074\u002C\u0044\u0065\u0074\u0020\u0073\u0074\u0079\u0072\u006B\u0065\u0072\u0020\u0062\u0065\u0064\u0072\u0069\u0066\u0074\u0065\u006E\u0073\u0020\u006F\u006D\u0064\u00F8\u006D\u006D\u0065\u002C\u0044\u0065\u0074\u0020\u0073\u0069\u006B\u0072\u0065\u0072\u0020\u0065\u006E\u0020\u006B\u006F\u006E\u0073\u0065\u006B\u0076\u0065\u006E\u0074\u0020\u006B\u006F\u006D\u006D\u0075\u006E\u0069\u006B\u0061\u0073\u006A\u006F\u006E' && ans_VarQuestion_0005 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action11869_2(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action11869_4(onAfterFBAction);return 0;  } //2 
 
     }
   }
@@ -442,6 +398,35 @@ trivActFBCnt++; action11869_2(onAfterFBAction);return 0;  } //2
 
 function OnDeviceRotate() {
 
+}
+
+keyVal = 0;
+keyFlags = 0;
+
+function keyDown(e) {
+    if( is.ie ) e = event
+    keyVal = 0
+    if( e.keyCode == 18 )
+        keyFlags = keyFlags | 1
+    else if( e.keyCode == 17 )
+        keyFlags = keyFlags | 2
+    else if( e.keyCode == 16 )
+        keyFlags = keyFlags | 4
+    else
+        keyVal = e.keyCode
+
+    
+    try{app.keyPressed(keyFlags, keyVal);}catch(e){alert}
+}
+
+function keyUp(e) {
+    if( is.ie ) e = event
+    if( e.keyCode == 18 )
+        keyFlags = keyFlags & ~1
+    else if( e.keyCode == 17 )
+        keyFlags = keyFlags & ~2
+    else if( e.keyCode == 16 )
+        keyFlags = keyFlags & ~4
 }
 
 function action11867(fn){
@@ -502,12 +487,12 @@ function Update_qu11869( upd ) {
     qu11869Object.hasBeenProcessed=false;
 }
 
-function action11869_1(fn){
-    if(!document.getElementById("DLG_Div_11869"))trivAlert( 'action11869_1', 'Grafisk design_intro', 'Riktig!!', fn );
+function action11869_3(fn){
+    if(!document.getElementById("DLG_Div_11869"))trivAlert( 'action11869_3', 'Grafisk design_intro', 'Riktig!!', fn );
 }
 
-function action11869_2(fn){
-    if(!document.getElementById("DLG_Div_11869"))trivAlert( 'action11869_2', 'Grafisk design_intro', 'Dessverre...', fn );
+function action11869_4(fn){
+    if(!document.getElementById("DLG_Div_11869"))trivAlert( 'action11869_4', 'Grafisk design_intro', 'Dessverre...', fn );
 }
 
 if( is.min ){
@@ -833,13 +818,13 @@ writeStyleSheets(arObjs);}
 
 <body onfocus="trivOnFocus()" onResize="ReFlow()">
 
-    <DIV style="visibility:hidden;" id="pageDIV" class="pageDIV">
+    <DIV style="visibility:hidden;" id="pageDIV" >
    </DIV>
 <script>
 if( is.min ){
     findWH()
     var left = (winW > 1009) ? (winW-1009)/2 : 0
-    document.write('<style type="text/css">.pageDIV { position: absolute; top:0px; left: ' + left + 'px; width:1009px; height:662px; clip:rect(0px 1009px 662px 0px); overflow:hidden;' )
+    document.write('<style type="text/css">#pageDIV { position: absolute; top:0px; left: ' + left + 'px; width:1009px; height:662px; clip:rect(0px 1009px 662px 0px); overflow:hidden;' )
     if(is.iOS)
 		document.write('-webkit-text-size-adjust:100%;')
     document.write('} </style>')
