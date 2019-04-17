@@ -39,7 +39,7 @@ TabletResponsive={"1009":{
 ,
 "check11922":{"x":219,"y":472,"fsize":16,"bOffBottom":0}
 ,
-"image13513":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13513":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
@@ -89,7 +89,7 @@ try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)
 ,
 "check11922":{"x":170,"y":472,"fsize":16,"bOffBottom":0}
 ,
-"image13513":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13513":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}

@@ -9,11 +9,11 @@ TabletResponsive={"1009":{
 ,
 "image12020":{"x":400,"y":351,"w":362,"h":222,"bOffBottom":0,"i":"images/think-different-wallpaperspopular-think-different-wallpapers-2560x1440-for-4k-monitor-pic-wpxh462752.jpg"}
 ,
-"image12007":{"x":400,"y":200,"w":362,"h":152,"bOffBottom":0,"i":"images/skjermbilde_6_.png"}
+"image12007":{"x":400,"y":200,"w":362,"h":152,"bOffBottom":0,"i":"images/skjermbilde6.jpg"}
 ,
 "text11945":{"x":198,"y":21,"w":554,"h":43,"txtscale":100,"bOffBottom":0}
 ,
-"image13527":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13527":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
@@ -33,11 +33,11 @@ try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)
 ,
 "image12020":{"x":311,"y":351,"w":282,"h":173,"bOffBottom":0,"i":"images/think-different-wallpaperspopular-think-different-wallpapers-2560x1440-for-4k-monitor-pic-wpxh462752.jpg"}
 ,
-"image12007":{"x":311,"y":200,"w":282,"h":118,"bOffBottom":0,"i":"images/skjermbilde_6_.png"}
+"image12007":{"x":311,"y":200,"w":282,"h":118,"bOffBottom":0,"i":"images/skjermbilde6.jpg"}
 ,
 "text11945":{"x":154,"y":21,"w":431,"h":43,"txtscale":100,"bOffBottom":0}
 ,
-"image13527":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13527":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}

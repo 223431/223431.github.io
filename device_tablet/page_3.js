@@ -15,11 +15,11 @@ TabletResponsive={"1009":{
 ,
 "text2560":{"x":396,"y":210,"w":364,"h":80,"txtscale":100,"bOffBottom":0}
 ,
-"image2601":{"x":198,"y":259,"w":762,"h":341,"bOffBottom":0,"i":"images/skjermbilde_3_.png"}
+"image2601":{"x":214,"y":266,"w":730,"h":327,"bOffBottom":0,"i":"images/skjermbilde3.jpg"}
 ,
 "text2564":{"x":198,"y":20,"w":554,"h":43,"txtscale":100,"bOffBottom":0}
 ,
-"image13247":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13247":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
@@ -45,11 +45,11 @@ try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)
 ,
 "text2560":{"x":308,"y":210,"w":283,"h":80,"txtscale":100,"bOffBottom":0}
 ,
-"image2601":{"x":154,"y":259,"w":593,"h":265,"bOffBottom":0,"i":"images/skjermbilde_3_.png"}
+"image2601":{"x":166,"y":266,"w":568,"h":254,"bOffBottom":0,"i":"images/skjermbilde3.jpg"}
 ,
 "text2564":{"x":154,"y":20,"w":431,"h":86,"txtscale":100,"bOffBottom":0}
 ,
-"image13247":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13247":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}

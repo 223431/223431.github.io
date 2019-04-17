@@ -9,7 +9,7 @@ DesktopResponsive={"1009":{
 ,
 "shape19058":{"x":175,"y":79,"w":820.000000,"h":13.000000,"stylemods":[{"sel":"div.shape19058Text","decl":" { position:fixed; left:6px; top:6px; width:803px; height:-4px;}"},{"sel":"span.shape19058Text","decl":" { display:table-cell; position:relative; width:803px; height:-4px; vertical-align:middle; text-align:center; line-height:16px; font-size:16px; font-family:\"Lucida Sans Unicode\"; color:#ffffff;}"}],"bOffBottom":0 ,"td": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAywAAAAFCAYAAACnxWj+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAmSURBVHhe7cEBAQAAAIIg/69uSEAAAAAAAAAAAAAAAAAAAADwqQY/dQAB/dKuXwAAAABJRU5ErkJggg=="  ,"fd": "" ,"p": "M 4.000000 4.000000 L 811.000000 4.000000 " ,"i":"images/shape19058.png"}
 ,
-"image7415":{"x":100,"y":108,"w":960,"h":628,"bOffBottom":0,"i":"images/book-1110648_960_720.png"}
+"image7415":{"x":100,"y":108,"w":960,"h":628,"bOffBottom":0,"i":"images/book.gif"}
 ,
 "text3066":{"x":517,"y":35,"w":185,"h":23,"txtscale":100,"bOffBottom":0}
 ,
@@ -19,12 +19,12 @@ DesktopResponsive={"1009":{
 ,
 "image7544":{"x":604,"y":186,"w":321,"h":455,"bOffBottom":0,"i":"images/designhandbok_pages-to-jpg-0001.jpg"}
 ,
-"image12913":{"x":7,"y":6,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image12913":{"x":7,"y":6,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
 }
 ,
 "RCDResultResize":function(){}
-,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/book-1110648_960_720.png','images/designhandbok_pages-to-jpg-0001.jpg','images/grafisk_logo.png','images/button15627.png','images/button15627_over.png','images/button15627_down.png','images/button15627_disabled.png','images/button15621.png','images/button15621_over.png','images/button15621_down.png','images/button15621_disabled.png','images/shape19058.png','images/text7437CircleBulletFont7.png']
+,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/designhandbok_pages-to-jpg-0001.jpg','images/grafisk_logo.gif','images/book.gif','images/button15627.png','images/button15627_over.png','images/button15627_down.png','images/button15627_disabled.png','images/button15621.png','images/button15621_over.png','images/button15621_down.png','images/button15621_disabled.png','images/shape19058.png','images/text7437CircleBulletFont7.png']
 }}

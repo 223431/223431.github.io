@@ -31,12 +31,12 @@ DesktopResponsive={"1009":{
 ,
 "radio11795":{"x":218,"y":379,"fsize":16,"bOffBottom":0}
 ,
-"image13499":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13499":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
 }
 ,
 "RCDResultResize":function(){}
-,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/grafisk_logo.png','images/button17535.png','images/button17535_over.png','images/button17535_down.png','images/button17535_disabled.png','images/button17529.png','images/button17529_over.png','images/button17529_down.png','images/button17529_disabled.png','images/shape19861.png']
+,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/grafisk_logo.gif','images/button17535.png','images/button17535_over.png','images/button17535_down.png','images/button17535_disabled.png','images/button17529.png','images/button17529_over.png','images/button17529_down.png','images/button17529_disabled.png','images/shape19861.png']
 }}

@@ -7,9 +7,9 @@ DesktopResponsive={"1009":{
 ,
 "shape18475":{"x":175,"y":79,"w":820.000000,"h":13.000000,"stylemods":[{"sel":"div.shape18475Text","decl":" { position:fixed; left:6px; top:6px; width:803px; height:-4px;}"},{"sel":"span.shape18475Text","decl":" { display:table-cell; position:relative; width:803px; height:-4px; vertical-align:middle; text-align:center; line-height:16px; font-size:16px; font-family:\"Lucida Sans Unicode\"; color:#ffffff;}"}],"bOffBottom":0 ,"td": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAywAAAAFCAYAAACnxWj+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAmSURBVHhe7cEBAQAAAIIg/69uSEAAAAAAAAAAAAAAAAAAAADwqQY/dQAB/dKuXwAAAABJRU5ErkJggg=="  ,"fd": "" ,"p": "M 4.000000 4.000000 L 811.000000 4.000000 " ,"i":"images/shape18475.png"}
 ,
-"image1601":{"x":200,"y":178,"w":760,"h":422,"bOffBottom":0,"i":"images/skjermbilde_1_.png"}
+"image1601":{"x":207,"y":181,"w":746,"h":415,"bOffBottom":0,"i":"images/skjermbilde1.jpg"}
 ,
-"image12782":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image12782":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "text5995":{"x":198,"y":21,"w":554,"h":43,"txtscale":100,"bOffBottom":0}
 ,
@@ -18,5 +18,5 @@ try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)
 }
 ,
 "RCDResultResize":function(){}
-,"preload":['images/av_fast_forward.png','images/skjermbilde_1_.png','images/grafisk_logo.png','images/button691.png','images/button691_over.png','images/button691_down.png','images/button691_disabled.png','images/shape18475.png']
+,"preload":['images/av_fast_forward.png','images/grafisk_logo.gif','images/skjermbilde1.jpg','images/button691.png','images/button691_over.png','images/button691_down.png','images/button691_disabled.png','images/shape18475.png']
 }}

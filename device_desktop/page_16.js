@@ -9,18 +9,18 @@ DesktopResponsive={"1009":{
 ,
 "shape19323":{"x":175,"y":79,"w":820.000000,"h":13.000000,"stylemods":[{"sel":"div.shape19323Text","decl":" { position:fixed; left:6px; top:6px; width:803px; height:-4px;}"},{"sel":"span.shape19323Text","decl":" { display:table-cell; position:relative; width:803px; height:-4px; vertical-align:middle; text-align:center; line-height:16px; font-size:16px; font-family:\"Lucida Sans Unicode\"; color:#ffffff;}"}],"bOffBottom":0 ,"td": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAywAAAAFCAYAAACnxWj+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAmSURBVHhe7cEBAQAAAIIg/69uSEAAAAAAAAAAAAAAAAAAAADwqQY/dQAB/dKuXwAAAABJRU5ErkJggg=="  ,"fd": "" ,"p": "M 4.000000 4.000000 L 811.000000 4.000000 " ,"i":"images/shape19323.png"}
 ,
-"video11309":{"x":255,"y":166,"w":659,"h":470,"bOffBottom":0}
+"video11309":{"x":256,"y":145,"w":659,"h":470,"bOffBottom":0}
 ,
 "text10886":{"x":557,"y":35,"w":221,"h":23,"txtscale":100,"bOffBottom":0}
 ,
 "text10887":{"x":198,"y":20,"w":348,"h":45,"txtscale":100,"bOffBottom":0}
 ,
-"image13429":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13429":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
 }
 ,
 "RCDResultResize":function(){}
-,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/grafisk_logo.png','images/button16920.png','images/button16920_over.png','images/button16920_down.png','images/button16920_disabled.png','images/button16914.png','images/button16914_over.png','images/button16914_down.png','images/button16914_disabled.png','images/shape19323.png']
+,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/grafisk_logo.gif','images/button16920.png','images/button16920_over.png','images/button16920_down.png','images/button16920_disabled.png','images/button16914.png','images/button16914_over.png','images/button16914_down.png','images/button16914_disabled.png','images/shape19323.png']
 }}

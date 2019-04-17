@@ -17,14 +17,14 @@ DesktopResponsive={"1009":{
 ,
 "text2798":{"x":198,"y":20,"w":554,"h":43,"txtscale":100,"bOffBottom":0}
 ,
-"image2839":{"x":200,"y":270,"w":759,"h":333,"bOffBottom":0,"i":"images/skjermbilde_4_.png"}
+"image2839":{"x":211,"y":275,"w":737,"h":322,"bOffBottom":0,"i":"images/skjermbilde4.jpg"}
 ,
-"image13261":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13261":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
 }
 ,
 "RCDResultResize":function(){}
-,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/skjermbilde_4_.png','images/grafisk_logo.png','images/button15510.png','images/button15510_over.png','images/button15510_down.png','images/button15510_disabled.png','images/button15504.png','images/button15504_over.png','images/button15504_down.png','images/button15504_disabled.png','images/shape18882.png']
+,"preload":['images/av_fast_forward.png','images/av_fast_rewind.png','images/grafisk_logo.gif','images/skjermbilde4.jpg','images/button15510.png','images/button15510_over.png','images/button15510_down.png','images/button15510_disabled.png','images/button15504.png','images/button15504_over.png','images/button15504_down.png','images/button15504_disabled.png','images/shape18882.png']
 }}

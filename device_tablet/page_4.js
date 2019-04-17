@@ -17,9 +17,9 @@ TabletResponsive={"1009":{
 ,
 "text2798":{"x":198,"y":20,"w":554,"h":43,"txtscale":100,"bOffBottom":0}
 ,
-"image2839":{"x":200,"y":270,"w":759,"h":333,"bOffBottom":0,"i":"images/skjermbilde_4_.png"}
+"image2839":{"x":211,"y":275,"w":737,"h":322,"bOffBottom":0,"i":"images/skjermbilde4.jpg"}
 ,
-"image13261":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13261":{"x":4,"y":5,"w":150,"h":150,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
@@ -47,9 +47,9 @@ try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)
 ,
 "text2798":{"x":154,"y":20,"w":431,"h":86,"txtscale":100,"bOffBottom":0}
 ,
-"image2839":{"x":156,"y":270,"w":591,"h":259,"bOffBottom":0,"i":"images/skjermbilde_4_.png"}
+"image2839":{"x":164,"y":275,"w":573,"h":251,"bOffBottom":0,"i":"images/skjermbilde4.jpg"}
 ,
-"image13261":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image13261":{"x":3,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}

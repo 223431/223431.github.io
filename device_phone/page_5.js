@@ -9,7 +9,7 @@ PhoneResponsive={"785":{
 ,
 "shape19058":{"x":136,"y":61,"w":641.000000,"h":13.000000,"stylemods":[{"sel":"div.shape19058Text","decl":" { position:fixed; left:6px; top:6px; width:624px; height:-4px;}"},{"sel":"span.shape19058Text","decl":" { display:table-cell; position:relative; width:624px; height:-4px; vertical-align:middle; text-align:center; line-height:16px; font-size:16px; font-family:\"Lucida Sans Unicode\"; color:#ffffff;}"}],"bOffBottom":0 ,"td": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnkAAAAFCAYAAAA5dvoyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAjSURBVGhD7cGBAAAAAMOg+VNf4AhVAAAAAAAAAAAAAAAAPDUxeQABa1MSqgAAAABJRU5ErkJggg=="  ,"fd": "" ,"p": "M 4.000000 4.000000 L 632.000000 4.000000 "}
 ,
-"image7415":{"x":78,"y":84,"w":747,"h":489,"bOffBottom":0,"i":"images/book-1110648_960_720.png"}
+"image7415":{"x":78,"y":84,"w":747,"h":489,"bOffBottom":0,"i":"images/book.gif"}
 ,
 "text3066":{"x":402,"y":27,"w":144,"h":58,"txtscale":100,"bOffBottom":0}
 ,
@@ -19,7 +19,7 @@ PhoneResponsive={"785":{
 ,
 "image7544":{"x":470,"y":145,"w":250,"h":354,"bOffBottom":0,"i":"images/designhandbok_pages-to-jpg-0001.jpg"}
 ,
-"image12913":{"x":5,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image12913":{"x":5,"y":5,"w":117,"h":117,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
@@ -39,7 +39,7 @@ try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)
 ,
 "shape19058":{"x":82,"y":79,"w":397.000000,"h":13.000000,"stylemods":[{"sel":"div.shape19058Text","decl":" { position:fixed; left:6px; top:6px; width:380px; height:-4px;}"},{"sel":"span.shape19058Text","decl":" { display:table-cell; position:relative; width:380px; height:-4px; vertical-align:middle; text-align:center; line-height:16px; font-size:16px; font-family:\"Lucida Sans Unicode\"; color:#ffffff;}"}],"bOffBottom":0 ,"td": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYUAAAAFCAYAAACq5PAkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAfSURBVFhH7cGBAAAAAMOg+VNf4QBVAAAAAAAAAPCrAR5pAAE74zwhAAAAAElFTkSuQmCC"  ,"fd": "" ,"p": "M 4.000000 4.000000 L 388.000000 4.000000 "}
 ,
-"image7415":{"x":48,"y":108,"w":457,"h":299,"bOffBottom":0,"i":"images/book-1110648_960_720.png"}
+"image7415":{"x":48,"y":108,"w":457,"h":299,"bOffBottom":0,"i":"images/book.gif"}
 ,
 "text3066":{"x":246,"y":35,"w":88,"h":87,"txtscale":100,"bOffBottom":0}
 ,
@@ -49,7 +49,7 @@ try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)
 ,
 "image7544":{"x":287,"y":186,"w":153,"h":216,"bOffBottom":0,"i":"images/designhandbok_pages-to-jpg-0001.jpg"}
 ,
-"image12913":{"x":3,"y":6,"w":71,"h":71,"bOffBottom":0,"i":"images/grafisk_logo.png"}
+"image12913":{"x":3,"y":6,"w":71,"h":71,"bOffBottom":0,"i":"images/grafisk_logo.gif"}
 ,
 "RCDResetQuestion":function(){
 try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
